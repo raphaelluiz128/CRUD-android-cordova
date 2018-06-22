@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+       
+  
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Artifika" rel="stylesheet"> 
+        <title>Nova Aplicação CRUD</title>
+         
+    </head>
+    <body>
+        <div id="telalogin" class="page page-active"> 
+            <p class="paragrafoT">Tela de login</p>
+            <form>
+            <p class ="paragrafoT2">
+                Digite seu nome: <input id="ITNomeL" type="text" /></br>
+            Digite sua senha: <input id="ITSenhaL" type="text" /></br>
+<input id="SBLogin" type="button"  value="Efetuar login" />
+               <button class="btn btn-block red darken-3 waves-effect targetPage" type="button" dt-page='#telausuarios'>Tela de usuários</button>    
+                    </p>
+                </form>
+             </div>
+        <div id="telausuarios" class="page"> 
+         <p class="paragrafoT">Usuários cadastrados</p>
+            
+            <input id="SBMUsuarios" type="button"  value="Mostrar usuários" />
+            <input id="SBCadastrarU" type="button"  value="Salvar usuário" />
+            <input id="SBApagarU" type="button"  value="Apagar usuário" />
+             <button class="btn btn-block red darken-3 waves-effect targetPage" type="button" dt-page='#telalogin'>Tela de login</button>  
+            
+                     <form class="form">
+                <input type="hidden" id="field-id" value="" />
+                <div class="box">
+                    <input type="text" id="field-name"/>
+                    <label for="field-name">Nome</label>
+                </div>
+
+                <div class="box">
+                    <input type="text" id="field-pass"/>
+                    <label for="field-pass">Senha</label>
+                </div>
+
+                <div class="box">
+                    <input type="text" id="field-tel"/>
+                    <label for="field-tel">Tel</label>
+                </div>
+      
+            </form>
+                <table id="table-register">
+                <thead>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Senha</th>
+                    <th>Tel</th>
+                </thead>
+                <tbody id="tbody-register">
+                
+                </tbody>
+             
+            </table>
+        </div>
+       <script type="text/javascript" src="cordova.js"></script>
+       <script type="text/javascript" src="scripts/jquery.min.js"></script>
+         <script type="text/javascript" src="scripts/index.js"></script>
+        <script type="text/javascript" src="scripts/funcoes.js"></script>
+     </body>
+</html>
